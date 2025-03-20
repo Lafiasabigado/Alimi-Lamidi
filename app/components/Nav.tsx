@@ -7,26 +7,30 @@ import { Menu, X } from "lucide-react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const links = [
-    {
+    { 
+      id: "home",
       path: "/",
       name: "Accueil",
     },
     {
+      id: "about",
       path: "/about",
       name: "À propos",
     },
     {
+      id: "projects",
       path: "/projects",
       name: "Projets",
     },
     {
+      id: "contact",
       path: "/contact",
       name: "Contact",
     },
   ];
 
   return (
-    <nav className='fixed top-0 left-0 right-0 z-50 w-full bg-gray-900/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800'>
+    <nav className='fixed top-0 left-0 right-0 z-50 w-full bg-gray-900/95 backdrop-blur-sm dark:border-gray-800'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-between items-center h-16'>
           <Link 
@@ -41,7 +45,7 @@ export default function Navbar() {
           <div className='hidden md:flex items-center space-x-8'>
             {links.map((link, index) => (
               <Link 
-                key={link.path} 
+                key={link.id} 
                 href={link.path} 
                 className='hover:text-blue-500 transition-colors duration-200'
                 data-aos="fade-down"
