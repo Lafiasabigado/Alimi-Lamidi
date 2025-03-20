@@ -3,7 +3,7 @@ import Presentation from './components/Presentation'
 
 const Page = () => {
   return (
-    <main>
+    <main className='max-w-5xl mx-auto'>
       <Presentation />
     </main>  
   )
