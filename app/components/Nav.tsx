@@ -8,22 +8,22 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const links = [
     { 
-      id: "home",
+      id: "#home",
       path: "/",
       name: "Accueil",
     },
     {
-      id: "about",
+      id: "#about",
       path: "/about",
       name: "À propos",
     },
     {
-      id: "projects",
+      id: "#projects",
       path: "/projects",
       name: "Projets",
     },
     {
-      id: "contact",
+      id: "#contact",
       path: "/contact",
       name: "Contact",
     },
@@ -45,8 +45,8 @@ export default function Navbar() {
           <div className='hidden md:flex items-center space-x-8'>
             {links.map((link, index) => (
               <Link 
+                href={link.id}
                 key={link.id} 
-                href={link.path} 
                 className='hover:text-blue-500 transition-colors duration-200'
                 data-aos="fade-down"
                 data-aos-delay={index * 100}
