@@ -67,7 +67,7 @@ export default function Navbar() {
 
         {/* Menu Mobile */}
         {isOpen && (
-          <div className='md:hidden bg-gray-900 py-4'>
+          <div className='md:hidden bg-gray-900/50 space-y-2 py-4'>
             {links.map((link) => (
               <Link 
                 key={link.path} 
