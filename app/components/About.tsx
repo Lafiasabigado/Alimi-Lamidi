@@ -2,8 +2,8 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='max-w-3xl mx-auto py-16 rounded-lg'>
-      <h2 className='text-2xl font-bold mb-4 text-center uppercase'>A propos de moi</h2>
+    <div className='max-w-3xl mx-auto pt-16 rounded-lg'>
+      <h2 className='text-2xl font-bold mb-4 text-center uppercase text-indigo-500'>A propos de moi</h2>
       <div className='bg-gray-800/50 rounded-2xl p-6 my-4 mx-2'>
         <p className='text-gray-300 leading-relaxed'>
           Je suis un développeur passionné avec une expertise en développement web et mobile. Mon objectif est de créer des solutions numériques innovantes qui répondent aux besoins de mes clients.
