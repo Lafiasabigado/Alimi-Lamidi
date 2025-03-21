@@ -35,7 +35,7 @@ export default function Navbar() {
         <div className='flex justify-between items-center h-16'>
           <Link 
             href="/" 
-            className='text-lg font-bold uppercase text-white hover:text-blue-500 transition-colors duration-200'
+            className='text-lg font-bold uppercase text-white hover:text-indigo-500 transition-colors duration-200'
             data-aos="fade-right"
           >
             Alimi Lamidi
@@ -47,7 +47,7 @@ export default function Navbar() {
               <Link 
                 href={link.id}
                 key={link.id} 
-                className='hover:text-blue-500 transition-colors duration-200'
+                className='hover:text-indigo-500 transition-colors duration-200'
                 data-aos="fade-down"
                 data-aos-delay={index * 100}
               >
@@ -67,12 +67,12 @@ export default function Navbar() {
 
         {/* Menu Mobile */}
         {isOpen && (
-          <div className='md:hidden space-y-4 py-4 bg-white dark:bg-gray-900'>
+          <div className='md:hidden bg-gray-900 py-4'>
             {links.map((link) => (
               <Link 
                 key={link.path} 
                 href={link.path} 
-                className='block hover:text-blue-500 transition-colors duration-200 py-2'
+                className='block hover:text-indigo-500 transition-colors duration-200 py-2'
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}

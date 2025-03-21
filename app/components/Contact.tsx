@@ -7,12 +7,12 @@ import { useForm, ValidationError } from '@formspree/react';
 const Contact = () => {
     const [state, handleSubmit] = useForm("xqapplwr");
     if (state.succeeded) {
-        return <p className='text-green-500'>Message envoyé!</p>;
+        return <p className='text-green-500 py-2'>Merci de votre message ! J'ai bien reçu votre message et je vous répondrai dès que possible. Bonne journée !</p>;
     }
     return (
       <div className='max-w-3xl mx-auto py-16 rounded-lg'>
         <h2 className='text-2xl font-bold mb-4 text-center uppercase'>Contactez Moi</h2>
-        <form onSubmit={handleSubmit} className='space-y-4 grid grid-cols-1 m-2  shadow-md shadow-gray-700 p-4'>
+        <form onSubmit={handleSubmit} className='space-y-4 grid grid-cols-1 m-2 shadow-md shadow-gray-700 p-4'>
         <label htmlFor="name">Nom</label>
         <input
           id="name"
@@ -61,7 +61,7 @@ const Contact = () => {
           id="message"
           name="message"
           rows={4}
-          className='border border-none bg-gray-700 border-gray-600 rounded px-4 py-2 focus:ring-blue-500 outline-none transition-all duration-200 text-white'
+          className='border border-none bg-gray-700 border-gray-600 rounded px-4 py-2 focus:ring-indigo-500 outline-none transition-all duration-200 text-white'
           cols={40}
         />
         <ValidationError 
@@ -69,7 +69,7 @@ const Contact = () => {
           field="message"
           errors={state.errors}
         />
-        <button className='transition-colors duration-200 bg-blue-500 py-2 px-4 rounded-full text-white hover:bg-blue-600' type="submit" disabled={state.submitting}>
+        <button className='transition-colors duration-200 bg-indigo-500 py-2 px-4 rounded-full text-white hover:bg-indigo-600' type="submit" disabled={state.submitting}>
           Envoyer
         </button>
       </form>

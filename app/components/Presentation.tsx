@@ -22,7 +22,7 @@ const Presentation = () => {
               <span className='pb-4'>Alimi Lamidi.</span>
             </p>
             <p className='text-gray-300'>
-              Développeur web et mobile résidant au Bénin.Simplifier la Tech c'est ma mission.
+              Développeur web et mobile résidant au Bénin <br /> Simplifier la Tech c'est ma mission.
             </p>
 
             <div data-aos="fade-right"
@@ -30,16 +30,16 @@ const Presentation = () => {
                className='flex items-center space-x-4 pt-5'>
                <Link href={'/contact'}>
                 <Button
-                  className='bg-blue-500 text-white hover:bg-blue-600 rounded-full'
+                  className='bg-indigo-500 text-white hover:bg-indigo-600 rounded-full'
                 >Me Contacter
                </Button>
                </Link>
-               <div className='text-blue-500'>
+               <div className='text-indigo-500'>
                 <Link href={link[0]}>
                   <Linkedin />
                 </Link>
                </div>
-               <div className='text-blue-500'>
+               <div className='text-indigo-500'>
                  <Link href={link[1]}>
                    <Github />
                  </Link>
