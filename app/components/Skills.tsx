@@ -32,7 +32,7 @@ const Skills = () => {
       <div className='grid grid-cols-1 gap-4 pt-5'>
         <div className='flex flex-col gap-2'>
            <div className='bg-gray-700/20 rounded-2xl p-4'>
-           <h2 className='text-lg font-bold'>Expérience</h2>
+           <h2 className='text-md font-bold uppercase'>Expérience</h2>
             <p className='text-gray-300 text-sm'>Je possède de solides bases en création d'applications mobiles et web dynamiques et réactives.
                 Mon expérience avec React Native m'a permis de développer des applications mobiles multiplateformes fonctionnant parfaitement sur iOS et Android. De plus, ma maîtrise de pHP m'a permis de créer des pages web rapides, évolutives et dynamiques, offrant une expérience utilisateur exceptionnelle. Je suis parfaitement au fait des dernières tendances et technologies en matière de développement web.
             </p>
