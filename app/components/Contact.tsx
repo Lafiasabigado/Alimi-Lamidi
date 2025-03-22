@@ -11,7 +11,7 @@ const Contact = () => {
     }
     return (
       <div className='max-w-3xl mx-auto pt-16 rounded-lg'>
-        <h2 className='text-2xl font-bold mb-4 text-center uppercase text-indigo-500'>Contactez Moi</h2>
+        <h2 className='text-xl font-bold mb-4 text-center uppercase font-mono'>Contactez Moi</h2>
         <form onSubmit={handleSubmit} className='space-y-4 grid grid-cols-1 m-2 shadow-md shadow-gray-700 p-4'>
         <label htmlFor="name">Nom</label>
         <input
