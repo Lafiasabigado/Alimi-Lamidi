@@ -23,7 +23,7 @@ const Skills = () => {
     { id: 4, name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
     { id: 5, name: "JavaScript", icon: <FaJs className="text-yellow-500" /> },
     { id: 6, name: "Python", icon: <FaPython className="text-blue-500" /> },
-    { id: 7, name: "React.js", icon: <FaReact className="text-yellow-500" /> },
+    { id: 7, name: "React", icon: <FaReact className="text-indigo-500" /> },
     { id: 8, name: "Laravel", icon: <FaLaravel className="text-yellow-500" /> },
     { id: 9, name: "Figma", icon: <FaFigma className="text-red-500" /> },
     { id: 10, name: "Git", icon: <FaGit className="text-white" /> },
@@ -34,11 +34,10 @@ const Skills = () => {
   ]
   return (
     <div className='max-w-3xl mx-auto pt-16 rounded-lg'>
-      <h2 className='text-xl font-bold mb-4 text-center uppercase'>Mes Compétences</h2>
+      <h2 className='text-xl font-bold mb-3 text-center uppercase'>Mes Compétences</h2>
       <div className='grid grid-cols-1 gap-4 pt-5'>
         <div className='flex flex-col gap-2'>
            <div className='bg-gray-700/20 rounded-2xl p-4 mx-2'>
-           <p className='font-bold uppercase pb-1'>Expérience</p>
             <p className='text-gray-300'>Je possède de solides bases en création d'applications mobiles et web dynamiques et réactives.
                 Mon expérience avec React Native et Flutter m'a permis de développer des applications mobiles multiplateformes fonctionnant parfaitement sur iOS et Android. De plus, ma maîtrise de PHP m'a permis de créer des pages web rapides, évolutives et dynamiques, offrant une expérience utilisateur exceptionnelle. Je suis parfaitement au fait des dernières tendances et technologies en matière de développement web et mobile.
             </p>

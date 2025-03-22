@@ -1,4 +1,6 @@
 import React from 'react'
+import { Button } from '@/components/ui/button'
+import { FaDownload } from 'react-icons/fa6'
 
 const About = () => {
   return (
@@ -12,8 +14,15 @@ const About = () => {
       <div className='bg-gray-800/50 rounded-2xl p-6 my-4 mx-2'>
        <p className='text-gray-300 leading-relaxed'>
         Titulaire d'une licence en génie logiciel, la résolution de problèmes me passionne, et je suis toujours motivé pour apprendre de nouvelles choses. En dehors des heures de code, j'adore la création de contenus ou regarder des films et séries.
-        N'hésitez pas à me contacter si vous souhaitez collaborer sur quelque chose d'intéressant !
         </p>
+        <p className='text-indigo-500 leading-relaxed py-2.5'>
+          N'hésitez pas à me contacter si vous souhaitez collaborer sur quelque chose d'intéressant !
+        </p>
+        <div className='flex'>
+          <Button className='bg-indigo-500 text-white hover:bg-indigo-600 rounded-full'>Télécharger CV
+            <FaDownload className='text-xl' />
+          </Button>
+        </div>
       </div>
     </div>
   )
