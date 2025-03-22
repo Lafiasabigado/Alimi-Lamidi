@@ -54,11 +54,11 @@ export function Projects() {
   // État pour suivre l'index de la slide active
   const [activeIndex, setActiveIndex] = React.useState(0);
 
-  // Défilement automatique toutes les 20 secondes
+  // Défilement automatique toutes les 5 secondes
   React.useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % projects.length); // Passer à la slide suivante
-    }, 20000);
+    }, 5000);
 
     // Nettoyer l'intervalle lorsque le composant est démonté
     return () => clearInterval(interval);
