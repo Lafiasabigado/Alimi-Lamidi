@@ -12,7 +12,7 @@ const Contact = () => {
     return (
       <section className='max-w-3xl mx-auto pt-16 rounded-lg'>
         <h2 className='text-xl font-bold mb-4 text-center uppercase'>Contactez Moi</h2>
-        <form onSubmit={handleSubmit} className='space-y-4 grid grid-cols-1 m-2 shadow-md shadow-gray-700 p-4'>
+        <form onSubmit={handleSubmit} className='space-y-4 grid grid-cols-1 m-2 shadow-md bg-gray-800/50 p-6'>
         <label htmlFor="name">Nom</label>
         <input
           id="name"

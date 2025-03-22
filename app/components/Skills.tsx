@@ -37,14 +37,14 @@ const Skills = () => {
       <h2 className='text-xl font-bold mb-3 text-center uppercase'>Mes Compétences</h2>
       <div className='grid grid-cols-1 gap-4 pt-5'>
         <div className='flex flex-col gap-2'>
-           <div className='bg-gray-700/20 rounded-2xl p-4 mx-2'>
+           <div className='bg-gray-800/50 rounded-2xl p-6 mx-2'>
             <p className='text-gray-300'>Je possède de solides bases en création d'applications mobiles et web dynamiques et réactives.
                 Mon expérience avec React Native et Flutter m'a permis de développer des applications mobiles multiplateformes fonctionnant parfaitement sur iOS et Android. De plus, ma maîtrise de PHP m'a permis de créer des pages web rapides, évolutives et dynamiques, offrant une expérience utilisateur exceptionnelle. Je suis parfaitement au fait des dernières tendances et technologies en matière de développement web et mobile.
             </p>
            </div>
         </div>
         </div>
-        <div className='flex flex-wrap gap-2 my-4 mx-4'>
+        <div className='flex flex-wrap gap-2 my-4 mx-4 bg-gray-800/50 rounded-2xl p-6'>
         {skills.map((skill) => (
           <div key={skill.id} className='flex hover:bg-gray-600/50 transition-colors duration-200 items-center justify-around gap-2 border border-gray-600 rounded-full p-2'>
             {skill.icon}
