@@ -12,6 +12,7 @@ import { FaGit } from 'react-icons/fa6'
 import { FaFigma } from 'react-icons/fa6'
 import { SiVercel } from 'react-icons/si'
 import { FaJava } from 'react-icons/fa6'
+import { FaC } from 'react-icons/fa6'
 
 const Skills = () => {
 
@@ -28,7 +29,8 @@ const Skills = () => {
     { id: 10, name: "Git", icon: <FaGit className="text-white" /> },
     { id: 11, name: "Bootstrap", icon: <FaBootstrap className="text-blue-500" /> },
     { id: 12, name: "Vercel", icon: <SiVercel className="text-indigo-100" /> },
-    { id: 13, name: "Java", icon: <FaJava className="text-pink-500" /> },
+    { id: 13, name: "Java", icon: <FaJava className="text-sky-500" /> },
+    { id: 14, name: "C", icon: <FaC className="text-fuchsia-500" /> },
   ]
   return (
     <div className='max-w-3xl mx-auto pt-16 rounded-lg'>
@@ -43,7 +45,7 @@ const Skills = () => {
            </div>
         </div>
         </div>
-        <div className='flex flex-wrap gap-2 my-4 mx-2'>
+        <div className='flex flex-wrap gap-2 my-4 mx-4'>
         {skills.map((skill) => (
           <div key={skill.id} className='flex hover:bg-gray-600/50 transition-colors duration-200 items-center justify-around gap-2 border border-gray-600 rounded-full p-2'>
             {skill.icon}
