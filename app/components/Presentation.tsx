@@ -22,7 +22,7 @@ const Presentation = () => {
               <span className='pb-4'>Alimi Lamidi.</span>
             </p>
             <p className='text-gray-300'>
-              Développeur web et mobile résidant au Bénin <br /> Simplifier la Tech c'est ma mission.
+              Développeur web et mobile résidant au Bénin. <br /> Simplifier la Tech c'est ma mission.
             </p>
 
             <div data-aos="fade-right"

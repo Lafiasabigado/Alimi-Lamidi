@@ -45,7 +45,7 @@ export function Projects() {
     <section className="max-w-5xl mx-auto pt-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="flex flex-col text-center mt-2">
       <h2 className="text-xl font-bold uppercase">Mes Projets</h2>
-      <p className="text-gray-500 text-sm text-center">Découvrez un aperçu de mes projets les plus passionnant</p>
+      <p className="text-gray-500 text-sm text-center">Découvrez un aperçu de mes projets les plus passionnant.</p>
       </div>
       <Carousel
         opts={{
@@ -70,7 +70,7 @@ export function Projects() {
                     <h3 className="text-lg font-bold my-1">{projects[index].title}</h3>
                     <p className="text-gray-300 my-1">{projects[index].description}</p>
                     <div className="pt-1">
-                      <Button className="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-full">Voir Démo</Button>
+                      <Button className="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-2 rounded-full">Voir Démo</Button>
                     </div>
                   </div>                  
                   </CardContent>
