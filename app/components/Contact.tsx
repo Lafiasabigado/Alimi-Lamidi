@@ -10,9 +10,9 @@ const Contact = () => {
         return <p className='text-green-500 py-2'>Merci de votre message ! J'ai bien reçu votre message et je vous répondrai dès que possible. Bonne journée !</p>;
     }
     return (
-      <section className='max-w-3xl mx-auto pt-16 rounded-lg'>
+      <section className='max-w-3xl mx-auto pt-16'>
         <h2 className='text-xl font-bold mb-4 text-center uppercase'>Contactez Moi</h2>
-        <form onSubmit={handleSubmit} className='space-y-4 grid grid-cols-1 m-2 shadow-md bg-gray-800/50 p-6'>
+        <form onSubmit={handleSubmit} className='space-y-4 grid grid-cols-1 m-2 shadow-sm bg-gray-800/50 p-6 rounded-2xl'>
         <label htmlFor="name">Nom</label>
         <input
           id="name"
