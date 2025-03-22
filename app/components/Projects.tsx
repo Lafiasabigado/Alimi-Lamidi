@@ -16,36 +16,36 @@ import {
 export function Projects() {
   const projects = [
     {id:1,name:"Project 1", 
-     image:"/projects/project1.png",
+     image:"/projects/project2.jpg",
      title:"Web Formation",
      description:"Site de Formation en ligne"
     },
     {id:2,name:"Project 2",
-     image:"/projects/project2.jpg",
+     image:"/projects/project3.jpg",
      title:"Todo List",
      description:"Application web de gestion de tâche"
     },
     {id:3,name:"Project 3",
-     image:"/projects/project3.jpg",
+     image:"/projects/project2.jpg",
      title:"Food Mobile App",
      description:"Application mobile de commande de repas"
     },
     {id:4,name:"Project 4",
-     image:"/projects/project1.png",
+     image:"/projects/project3.jpg",
      title:"Web Formation",
      description:"Site de Formation en ligne"
     },
     {id:5,name:"Project 5",
-     image:"/projects/project1.png",
+     image:"/projects/project2.jpg",
      title:"Web Formation",
      description:"Site de Formation en ligne"
     },
   ]
   return (
-    <section className="max-w-5xl mx-auto pt-16 mb-16">
+    <section className="max-w-5xl mx-auto pt-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="flex flex-col text-center mt-2">
       <h2 className="text-xl font-bold uppercase">Mes Projets</h2>
-      <p className="text-indigo-500 text-sm text-center">Découvrez un aperçu de mes projets les plus passionnant</p>
+      <p className="text-gray-500 text-sm text-center">Découvrez un aperçu de mes projets les plus passionnant</p>
       </div>
       <Carousel
         opts={{
@@ -64,7 +64,7 @@ export function Projects() {
                     alt={projects[index].name}
                     width={500}
                     height={500}
-                    className="object-cover rounded-xl"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                   <div className="flex pt-2 flex-col justify-start items-start my-2">
                     <h3 className="text-lg font-bold my-1">{projects[index].title}</h3>
