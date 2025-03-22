@@ -10,6 +10,8 @@ import { FaReact } from 'react-icons/fa6'
 import { FaBootstrap } from 'react-icons/fa6'
 import { FaGit } from 'react-icons/fa6'
 import { FaFigma } from 'react-icons/fa6'
+import { SiVercel } from 'react-icons/si'
+import { FaJava } from 'react-icons/fa6'
 
 const Skills = () => {
 
@@ -25,6 +27,8 @@ const Skills = () => {
     { id: 9, name: "Figma", icon: <FaFigma className="text-red-500" /> },
     { id: 10, name: "Git", icon: <FaGit className="text-white" /> },
     { id: 11, name: "Bootstrap", icon: <FaBootstrap className="text-blue-500" /> },
+    { id: 12, name: "Vercel", icon: <SiVercel className="text-indigo-100" /> },
+    { id: 13, name: "Java", icon: <FaJava className="text-pink-500" /> },
   ]
   return (
     <div className='max-w-3xl mx-auto pt-16 rounded-lg'>
@@ -34,7 +38,7 @@ const Skills = () => {
            <div className='bg-gray-700/20 rounded-2xl p-4 mx-2'>
            <p className='font-bold uppercase pb-1'>Expérience</p>
             <p className='text-gray-300'>Je possède de solides bases en création d'applications mobiles et web dynamiques et réactives.
-                Mon expérience avec React Native m'a permis de développer des applications mobiles multiplateformes fonctionnant parfaitement sur iOS et Android. De plus, ma maîtrise de pHP m'a permis de créer des pages web rapides, évolutives et dynamiques, offrant une expérience utilisateur exceptionnelle. Je suis parfaitement au fait des dernières tendances et technologies en matière de développement web.
+                Mon expérience avec React Native et Flutter m'a permis de développer des applications mobiles multiplateformes fonctionnant parfaitement sur iOS et Android. De plus, ma maîtrise de PHP m'a permis de créer des pages web rapides, évolutives et dynamiques, offrant une expérience utilisateur exceptionnelle. Je suis parfaitement au fait des dernières tendances et technologies en matière de développement web et mobile.
             </p>
            </div>
         </div>
