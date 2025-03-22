@@ -1,10 +1,12 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import { FaDownload } from 'react-icons/fa6'
+import Link from 'next/link'
 
 const About = () => {
+  const link = "/";
   return (
-    <div className='max-w-3xl mx-auto pt-16 rounded-lg'>
+    <section className='max-w-3xl mx-auto pt-16 rounded-lg'>
       <h2 className='text-xl font-bold mb-4 text-center uppercase'>A propos de moi</h2>
       <div className='bg-gray-800/50 rounded-2xl p-6 my-4 mx-2'>
         <p className='text-gray-300 leading-relaxed'>
@@ -19,12 +21,14 @@ const About = () => {
           N'hésitez pas à me contacter si vous souhaitez collaborer sur quelque chose d'intéressant !
         </p>
         <div className='flex'>
-          <Button className='bg-indigo-500 text-white hover:bg-indigo-600 rounded-full'>Télécharger CV
+          <Link href={link}>
+           <Button className='bg-indigo-500 text-white hover:bg-indigo-600 rounded-full'>Télécharger CV
             <FaDownload className='text-xl' />
-          </Button>
+           </Button>
+          </Link>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
