@@ -96,7 +96,7 @@ export function Projects() {
                       <h3 className="text-lg font-bold my-1">{project.title}</h3>
                       <p className="text-gray-300 my-1">{project.description}</p>
                       <div className="pt-2">
-                        <Button className="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-1 rounded-full">
+                        <Button className="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-2 rounded-full">
                           Voir Démo
                         </Button>
                       </div>
