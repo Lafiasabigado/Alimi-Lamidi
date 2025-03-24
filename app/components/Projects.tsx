@@ -58,7 +58,7 @@ export function Projects() {
   React.useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % projects.length); // Passer à la slide suivante
-    }, 5000);
+    }, 2000);
 
     // Nettoyer l'intervalle lorsque le composant est démonté
     return () => clearInterval(interval);
