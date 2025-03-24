@@ -4,7 +4,8 @@ import React from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Github, Linkedin } from 'lucide-react'
-import Link from 'next/link'
+import { Link as LinkR} from 'react-scroll';
+import Link from 'next/link';
 
 const Presentation = () => {
   const link = [
@@ -12,7 +13,7 @@ const Presentation = () => {
     "https://github.com/AlimiLamidi"
   ]
   return (
-    <section className='w-full overflow-hidden'>
+    <section id='acceuil' className='w-full overflow-hidden'>
       <div className='max-w-5xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='gap-4 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 md:grid-cols-2 items-center pt-32'>
           <div className=''>
@@ -28,12 +29,12 @@ const Presentation = () => {
             <div data-aos="fade-right"
                data-aos-delay="100"
                className='flex items-center space-x-4 pt-5'>
-               <Link href={'/contact'}>
+               <LinkR to="contact" smooth={true} duration={500}>
                 <Button
                   className='bg-indigo-500 text-white hover:bg-indigo-600 rounded-full'
                 >Me Contacter
                </Button>
-               </Link>
+               </LinkR>
                <div className='text-indigo-500'>
                 <Link href={link[0]}>
                   <Linkedin />

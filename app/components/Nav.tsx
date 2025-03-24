@@ -1,26 +1,27 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { Link as LinkR  } from "react-scroll"
+import Link  from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const links = [
     { 
-      path: "/",
+      id: "acceuil",
       name: "Accueil",
     },
     {
-      path: "/about",
+    id: "about",
       name: "À propos",
     },
     {
-      path: "/projects",
+      id: "projects",
       name: "Projets",
     },
     {
-      path: "/contact",
+      id: "contact",
       name: "Contact",
     },
   ];
@@ -30,7 +31,7 @@ export default function Navbar() {
       <div className='max-w-5xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-between items-center h-16'>
           <Link 
-            href="/" 
+           href="/" 
             className='text-lg font-bold uppercase text-white hover:text-indigo-500 transition-colors duration-200'
             data-aos="fade-right"
           >
@@ -40,15 +41,15 @@ export default function Navbar() {
           {/* Menu Desktop */}
           <div className='hidden md:flex items-center space-x-8'>
             {links.map((link, index) => (
-              <Link 
-                href={link.path}
+              <LinkR 
+                to={link.id}
                 key={index} 
                 className='hover:text-indigo-500 transition-colors duration-200'
                 data-aos="fade-down"
                 data-aos-delay={index * 100}
               >
                 {link.name}
-              </Link>
+              </LinkR>
             ))}
           </div>
 
@@ -65,14 +66,13 @@ export default function Navbar() {
         {isOpen && (
           <div className='md:hidden bg-gray-900/50 space-y-2 py-4'>
             {links.map((link) => (
-              <Link 
-                key={link.path} 
-                href={link.path} 
+              <LinkR 
+                to={link.id} 
                 className='block hover:text-indigo-500 transition-colors duration-200 py-2'
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
-              </Link>
+              </LinkR>
             ))}
           </div>
         )}

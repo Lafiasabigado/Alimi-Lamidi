@@ -7,7 +7,7 @@ import { Projects } from './components/Projects'
 
 const Page = () => {
   return (
-    <main className='max-w-5xl mx-auto'>
+    <main className='max-w-5xl mx-auto' id='accueil'>
       <Presentation />
       <About />
       <Projects />
