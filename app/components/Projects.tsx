@@ -14,42 +14,39 @@ import {
 } from "@/components/ui/carousel";
 
 export function Projects() {
-  const link = "";
   const projects = [
     {
       id: 1,
       name: "Dieu Existe Center",
       image: "/projects/Dieuexistecenter.jpg",
+      link:"",
       title: "Dieu Existe Center",
-      description: "Site web de formation en ligne des jeunes dans la musique.",
+      description: "Site web de formation en ligne dans la musique.",
     },
     {
       id: 2,
       name: "Tech Hive",
       image: "/projects/techhive.jpg",
+      link:"",
       title: "Tech Hive",
       description: "Site de vente d'ordinateur en ligne.",
     },
     {
       id: 3,
-      name: "Food Mobile App",
-      image: "/projects/project2.jpg",
-      title: "Food Mobile App",
-      description: "Application mobile de commande de repas",
+      name: "Task Manage App",
+      image: "/projects/habitude.png",
+      link:"/projects/habitude.mp4",
+      title: "Task Manage App",
+      description: "Application mobile de Gestion de tâche.",
     },
+    
     {
       id: 4,
-      name: "Project 4",
-      image: "/projects/project3.jpg",
-      title: "Web Formation",
-      description: "Site de Formation en ligne",
-    },
-    {
-      id: 5,
       name: "Project 5",
       image: "/projects/project2.jpg",
-      title: "Web Formation",
-      description: "Site de Formation en ligne",
+      link:"",
+      title: "Food mobile App",
+      description: "Application mobile de commande de repas.Commande avec livraison.",
     },
   ];
 
@@ -71,13 +68,13 @@ export function Projects() {
       <div className="flex flex-col text-center mt-2">
         <h2 className="text-xl font-bold uppercase">Mes Projets</h2>
         <p className="text-gray-500 text-sm text-center">
-          Découvrez un aperçu de mes projets les plus passionnants.
+          Découvrez un aperçu de mes projets.
         </p>
       </div>
       <Carousel
         opts={{
           align: "center",
-          startIndex: activeIndex, // Définir la slide active
+          startIndex: activeIndex, 
         }}
         className="w-full max-w-3xl mx-auto mt-4"
       >
@@ -85,7 +82,7 @@ export function Projects() {
           {projects.map((project) => (
             <CarouselItem key={project.id} className="md:basis-1/2 lg:basis-1/3">
               <div className="p-1">
-                <Card className="border-none bg-gray-700/50 rounded-2xl hover:bg-gray-800/50 h-[350px] w-full">
+                <Card className="border-none bg-gray-700/50 rounded-2xl hover:bg-gray-800/50 h-[370px] w-full">
                   <CardContent className="flex flex-col aspect-square justify-center p-6">
                     <Image
                       src={project.image}
@@ -98,7 +95,7 @@ export function Projects() {
                       <h3 className="text-lg font-bold my-1">{project.title}</h3>
                       <p className="text-gray-300 my-1">{project.description}</p>
                       <div className="pt-2">
-                        <Link href={link}>
+                        <Link href={project.link}>
                          <Button className="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-2 rounded-full">
                           Voir Démo
                          </Button>
