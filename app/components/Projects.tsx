@@ -46,7 +46,7 @@ export function Projects() {
       image: "/projects/project2.jpg",
       link:"",
       title: "Food mobile App",
-      description: "Application mobile de commande de repas.Commande avec livraison.",
+      description: "Application mobile de commande de repas.",
     },
   ];
 
@@ -89,7 +89,7 @@ export function Projects() {
                       alt={project.name}
                       width={500}
                       height={500}
-                      className="w-full h-full  object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="w-full h-36 rounded-2xl border object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                     <div className="flex pt-2 flex-col justify-start items-start my-2">
                       <h3 className="text-lg font-bold my-1">{project.title}</h3>
