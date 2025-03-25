@@ -12,45 +12,69 @@ import { FaGit } from 'react-icons/fa6'
 import { FaFigma } from 'react-icons/fa6'
 import { SiVercel } from 'react-icons/si'
 import { FaJava } from 'react-icons/fa6'
-import { FaC } from 'react-icons/fa6'
+import { SiDart } from 'react-icons/si'
 
 const Skills = () => {
 
-  const skills = [
+  const skillsweb = [
     {id:1 ,name: "Php", icon: <FaPhp className="text-blue-500" />},
-    {id:2, name: "Flutter", icon:<FaFlutter className="text-blue-500" />},
-    { id: 3, name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
-    { id: 4, name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
-    { id: 5, name: "JavaScript", icon: <FaJs className="text-yellow-500" /> },
-    { id: 6, name: "Python", icon: <FaPython className="text-blue-500" /> },
-    { id: 7, name: "React", icon: <FaReact className="text-indigo-500" /> },
-    { id: 8, name: "Laravel", icon: <FaLaravel className="text-yellow-500" /> },
-    { id: 9, name: "Figma", icon: <FaFigma className="text-red-500" /> },
-    { id: 10, name: "Git", icon: <FaGit className="text-white" /> },
-    { id: 11, name: "Bootstrap", icon: <FaBootstrap className="text-blue-500" /> },
-    { id: 12, name: "Vercel", icon: <SiVercel className="text-indigo-100" /> },
-    { id: 13, name: "Java", icon: <FaJava className="text-sky-500" /> },
-    { id: 14, name: "C", icon: <FaC className="text-fuchsia-500" /> },
+    { id: 2, name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
+    { id: 3, name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
+    { id: 4, name: "JavaScript", icon: <FaJs className="text-yellow-500" /> },
+    { id: 5, name: "Laravel", icon: <FaLaravel className="text-yellow-500" /> },
+    { id: 6, name: "Git", icon: <FaGit className="text-white" /> },
+    { id: 7, name: "Bootstrap", icon: <FaBootstrap className="text-blue-500" /> },
+    { id: 8, name: "Vercel", icon: <SiVercel className="text-indigo-100" /> },
+  ]
+  const skillsmobile = [
+    {id:1, name: "Flutter", icon:<FaFlutter className="text-blue-500" />},
+    { id:2, name: "React", icon: <FaReact className="text-indigo-500" /> },
+    { id:3, name: "Figma", icon: <FaFigma className="text-red-500" /> },
+    { id:4, name: "Git", icon: <FaGit className="text-white" /> },
+    { id:5, name: "Java", icon: <FaJava className="text-sky-500" /> },
+    {id:6, name:"Dart" , icon: <SiDart className="text-sky-400" /> }
+
   ]
   return (
     <section id='skills' className='max-w-3xl mx-auto pt-16 rounded-lg'>
       <h2 className='text-xl font-bold mb-3 text-center uppercase'>Mes Compétences</h2>
-      <div className='grid grid-cols-1 gap-4 pt-5'>
-        <div className='flex flex-col gap-2'>
-           <div className='bg-gray-800/50 rounded-2xl p-6 mx-2'>
-            <p className='text-gray-300'>Je possède de solides bases en création d'applications mobiles et web dynamiques et réactives.
-                Mon expérience avec React Native et Flutter m'a permis de développer des applications mobiles multiplateformes fonctionnant parfaitement sur iOS et Android. De plus, ma maîtrise de PHP m'a permis de créer des pages web rapides, évolutives et dynamiques, offrant une expérience utilisateur exceptionnelle. Je suis parfaitement au fait des dernières tendances et technologies en matière de développement web et mobile.
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-4 pt-6'>
+        <div className='flex flex-col gap-2 h-full w-full '>
+          <div className='bg-gray-800/50 hover:bg-gray-700/30 rounded-2xl p-6 mx-2'>
+            <p className='text-gray-300 font-mono text-xl'>
+               Développement web
             </p>
-           </div>
-        </div>
-        </div>
-        <div className='flex flex-wrap gap-2 my-4 mx-4 bg-gray-800/50 rounded-2xl p-6'>
-        {skills.map((skill) => (
-          <div key={skill.id} className='flex hover:bg-gray-600/50 transition-colors duration-200 items-center justify-around gap-2 border border-gray-600 rounded-full p-2'>
-            {skill.icon}
-            <span className='text-gray-300'>{skill.name}</span>
+            <p className='text-gray-300 py-2'>hover:bg-gray-700/30
+              Ma maîtrise de PHP m'a permis de créer des pages web rapides, évolutives et dynamiques, offrant une expérience utilisateur exceptionnelle.
+            </p>
+            <div className='flex flex-wrap gap-2 py-6 rounded-2xl'>
+              {skillsweb.map((skill) => (
+              <div key={skill.id} className='flex hover:bg-gray-600/50 transition-colors duration-200 items-center justify-around gap-2 border border-gray-600 rounded-full p-2'>
+                  {skill.icon}
+                <span className='text-gray-300'>{skill.name}</span>
+              </div>
+              ))}
+            </div>
           </div>
-        ))}
+        </div>
+        <div className='flex flex-col gap-2 h-full w-full'>
+          <div className='bg-gray-800/50 hover:bg-gray-700/30 rounded-2xl p-6 mx-2'>
+            <p className='text-gray-300 font-mono text-xl'>
+               Développement mobile
+            </p>
+              <p className='text-gray-300 py-2'>
+                Mon expérience avec React Native et Flutter m'a permis de développer des applications mobiles multiplateformes fonctionnant parfaitement sur iOS et Android.            
+              </p>
+              <div className='flex flex-wrap gap-2 py-6 rounded-2xl'>
+                {skillsmobile.map((skill) => (
+                <div key={skill.id} className='flex hover:bg-gray-600/50 transition-colors duration-200 items-center justify-around gap-2 border border-gray-600 rounded-full p-2'>
+                  {skill.icon}
+                <span className='text-gray-300'>{skill.name}</span>
+                </div>
+                ))}
+              </div>
+        </div>
+      </div>
       </div>
     </section>
   )

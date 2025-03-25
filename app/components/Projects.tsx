@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Link from "next/link"
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -13,6 +14,7 @@ import {
 } from "@/components/ui/carousel";
 
 export function Projects() {
+  const link = "";
   const projects = [
     {
       id: 1,
@@ -96,9 +98,11 @@ export function Projects() {
                       <h3 className="text-lg font-bold my-1">{project.title}</h3>
                       <p className="text-gray-300 my-1">{project.description}</p>
                       <div className="pt-2">
-                        <Button className="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-2 rounded-full">
+                        <Link href={link}>
+                         <Button className="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-2 rounded-full">
                           Voir Démo
-                        </Button>
+                         </Button>
+                        </Link>
                       </div>
                     </div>
                   </CardContent>
