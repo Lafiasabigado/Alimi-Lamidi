@@ -57,7 +57,7 @@ const Skills = () => {
           </div>
         </div>
         <div className='flex flex-col gap-2 h-full w-full'>
-          <div className='h-[350px] w-full bg-gray-800/50 hover:bg-gray-700/30 rounded-2xl p-6 mx-2 flex flex-col justify-between'>
+          <div className='h-[350px] w-full md:bg-gray-800/50 md:hover:bg-gray-700/30 bg-gray-600/50 hover:bg-gray-700/30 rounded-2xl p-6 mx-2 flex flex-col justify-between'>
             <p className='text-gray-300 font-mono text-xl'>
                Développement mobile
             </p>
