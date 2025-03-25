@@ -33,18 +33,17 @@ const Skills = () => {
     { id:4, name: "Git", icon: <FaGit className="text-white" /> },
     { id:5, name: "Java", icon: <FaJava className="text-sky-500" /> },
     {id:6, name:"Dart" , icon: <SiDart className="text-sky-400" /> }
-
   ]
   return (
     <section id='skills' className='max-w-3xl mx-auto pt-16 rounded-lg'>
       <h2 className='text-xl font-bold mb-3 text-center uppercase'>Mes Compétences</h2>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-4 pt-6'>
         <div className='flex flex-col gap-2 h-full w-full '>
-          <div className='bg-gray-800/50 hover:bg-gray-700/30 rounded-2xl p-6 mx-2'>
+          <div className='h-[350px] w-full bg-gray-800/50 hover:bg-gray-700/30 rounded-2xl p-6 mx-2 flex flex-col justify-between'>
             <p className='text-gray-300 font-mono text-xl'>
                Développement web
             </p>
-            <p className='text-gray-300 py-2'>hover:bg-gray-700/30
+            <p className='text-gray-300 py-2'>
               Ma maîtrise de PHP m'a permis de créer des pages web rapides, évolutives et dynamiques, offrant une expérience utilisateur exceptionnelle.
             </p>
             <div className='flex flex-wrap gap-2 py-6 rounded-2xl'>
@@ -58,7 +57,7 @@ const Skills = () => {
           </div>
         </div>
         <div className='flex flex-col gap-2 h-full w-full'>
-          <div className='bg-gray-800/50 hover:bg-gray-700/30 rounded-2xl p-6 mx-2'>
+          <div className='h-[350px] w-full bg-gray-800/50 hover:bg-gray-700/30 rounded-2xl p-6 mx-2 flex flex-col justify-between'>
             <p className='text-gray-300 font-mono text-xl'>
                Développement mobile
             </p>

@@ -18,21 +18,21 @@ export function Projects() {
   const projects = [
     {
       id: 1,
-      name: "Project 1",
-      image: "/projects/project2.jpg",
-      title: "Web Formation",
-      description: "Site de Formation en ligne",
+      name: "Dieu Existe Center",
+      image: "/projects/Dieuexistecenter.jpg",
+      title: "Dieu Existe Center",
+      description: "Site web de formation en ligne des jeunes dans la musique.",
     },
     {
       id: 2,
-      name: "Project 2",
-      image: "/projects/project3.jpg",
-      title: "Todo List",
-      description: "Application web de gestion de tâche",
+      name: "Tech Hive",
+      image: "/projects/techhive.jpg",
+      title: "Tech Hive",
+      description: "Site de vente d'ordinateur en ligne.",
     },
     {
       id: 3,
-      name: "Project 3",
+      name: "Food Mobile App",
       image: "/projects/project2.jpg",
       title: "Food Mobile App",
       description: "Application mobile de commande de repas",
@@ -82,17 +82,17 @@ export function Projects() {
         className="w-full max-w-3xl mx-auto mt-4"
       >
         <CarouselContent>
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <CarouselItem key={project.id} className="md:basis-1/2 lg:basis-1/3">
               <div className="p-1">
-                <Card className="border-none bg-gray-700/50 rounded-2xl hover:bg-gray-800/50">
+                <Card className="border-none bg-gray-700/50 rounded-2xl hover:bg-gray-800/50 h-[350px] w-full">
                   <CardContent className="flex flex-col aspect-square justify-center p-6">
                     <Image
                       src={project.image}
                       alt={project.name}
                       width={500}
                       height={500}
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="w-full h-full  object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                     <div className="flex pt-2 flex-col justify-start items-start my-2">
                       <h3 className="text-lg font-bold my-1">{project.title}</h3>
