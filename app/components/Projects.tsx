@@ -36,7 +36,7 @@ export function Projects() {
     {
       id: 3,
       name: "Task Manage App",
-      image: "/projects/habitude.png",
+      image: "/projects/Dieuexistecenter.jpg",
       link: "/projects/habitude.mp4",
       title: "Task Manage App",
       description: "Application mobile de Gestion de tâche.",
