@@ -22,7 +22,7 @@ export function Projects() {
       link: "",
       title: "Dieu Existe Center",
       description: "Site web de formation en ligne dans la musique.",
-      technologies: ["Php", "Bootstrap"]
+      technologies: ["Php", "Bootstrap","Js"]
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ export function Projects() {
       link: "",
       title: "Tech Hive",
       description: "Site de vente d'ordinateur en ligne.",
-      technologies: ["Php", "Bootstrap", "Laravel"]
+      technologies: ["Php", "Bootstrap", "Js"]
     },
     {
       id: 3,
